@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up form</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    
+    <!-- this container will contain the leaf -->
+    <div id="left-image-container">
+        <div class="logo-container">
+            <img id="odin-logo" src="./images/logo.png"
+            alt="logo of odin">
+            ODIN
+        </div>
+    </div>
+
+    <div id="right-content">
+        <p>
+            This is not a real online service! 
+            You know you need something like this in your life 
+            to help you realize your deepest dreams.
+        </p>
+        <p>You know you want to.</p>
+
+        <form action="#">
+            <p>Let's do this!</p>
+
+            <p>
+                <span>
+                    <label for="first-name">FIRST NAME</label>
+                    <input 
+                        type="text" 
+                        id="first-name" 
+                        name="first_name"
+                        placeholder="john">
+                </span>
+
+                <span>
+                    <label for="last-name">LAST NAME</label>
+                    <input 
+                        type="text"
+                        id="last-name"
+                        name="last_name"
+                        placeholder="cena">
+                </span>
+            </p>
+
+            <p>
+                <span> 
+                    <label for="email">EMAIL</label>
+                    <input 
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="example@gmail.com">
+                </span>
+                
+                <span>
+                    <label for="phone-number">PHONE NUMBER</label>
+                    <input 
+                        type="text"
+                        id="phone-number" 
+                        name="phone_number"
+                        placeholder="xxx-xxx-xxx"
+                        pattern="" />
+                </span>
+            </p>
+
+            <p>
+
+                <span>
+                    <label for="password">PASSWORD</label>
+                    <input 
+                        type="text"
+                        id="password"
+                        name="password"
+                        placeholder="1234567" />
+                </span>
+                
+                <span>
+                    <label for="confirm-password">CONFIRM PASSWORD</label>
+                    <input 
+                        type="number"
+                        id="confirm-password"
+                        name="confirm-password" />
+                </span>                
+            </p>
+        
+            <button type="submit">Create Account</button>
+
+            <p>Aready have an account? <a href="#">log in</a></p>
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
