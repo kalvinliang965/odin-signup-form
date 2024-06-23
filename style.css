@@ -116,8 +116,31 @@ button[type="submit"] {
 
 input {
     appearance: none;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
     padding: 0.75rem ;
     width: 20rem;
     font-size: 1.25rem;
 }
+
+
+input:invalid.clicked, .error{
+    border: 2px solid red;
+}
+
+
+.error-msg {
+    width: 100%;
+    padding: 0;
+  
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+    box-sizing: border-box;
+    display: block;
+  }
+
+  .active {
+    padding: 0.25rem;
+    margin: 0;
+  }

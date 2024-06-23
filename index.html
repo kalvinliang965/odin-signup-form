@@ -25,72 +25,85 @@
         </p>
         <p>You know you want to.</p>
 
-        <form action="#">
+        <form novalidate method="POST">
             <p>Let's do this!</p>
 
             <p>
                 <span>
-                    <label for="first-name">FIRST NAME</label>
+                    <label for="first-name">FIRST NAME <span aria-label="required">*</span></label>
                     <input 
                         type="text" 
                         id="first-name" 
                         name="first_name"
-                        placeholder="john">
+                        placeholder="john"
+                        required />
+                    <span class="error-msg" aria-live="polite"></span>
                 </span>
 
                 <span>
-                    <label for="last-name">LAST NAME</label>
+                    <label for="last-name">LAST NAME <span aria-label="required">*</span></label>
                     <input 
                         type="text"
                         id="last-name"
                         name="last_name"
-                        placeholder="cena">
+                        placeholder="cena"
+                        required />
+                    <span class="error-msg" aria-live="polite"></span>
                 </span>
             </p>
 
             <p>
                 <span> 
-                    <label for="email">EMAIL</label>
+                    <label for="email">EMAIL<span aria-label="required">*</span></label>
                     <input 
                         type="email"
                         id="email"
                         name="email"
-                        placeholder="example@gmail.com">
+                        placeholder="example@gmail.com"
+                        required />
+                    <span class="error-msg" aria-live="polite"></span>
                 </span>
                 
                 <span>
-                    <label for="phone-number">PHONE NUMBER</label>
+                    <label for="phone-number">PHONE NUMBER<span aria-label="required">*</span></label>
                     <input 
                         type="text"
                         id="phone-number" 
                         name="phone_number"
                         placeholder="xxx-xxx-xxx"
-                        pattern="" />
+                        pattern = "^[0-9]{3}-[0-9]{3}-[0-9]{3}$"   
+                        required />
+                    <span class="error-msg" aria-live="polite"></span>
                 </span>
             </p>
 
             <p>
 
                 <span>
-                    <label for="password">PASSWORD</label>
+                    <label for="password">PASSWORD<span aria-label="required">*</span></label>
                     <input 
                         type="text"
                         id="password"
                         name="password"
-                        placeholder="1234567" />
+                        placeholder="1234567"
+                        minlength="8"
+                        maxlength="16" 
+                        required />
+                    <span class="error-msg" aria-live="polite"></span>
                 </span>
                 
                 <span>
-                    <label for="confirm-password">CONFIRM PASSWORD</label>
+                    <label for="confirm-password">CONFIRM PASSWORD<span aria-label="required">*</span></label>
                     <input 
-                        type="number"
+                        type="text"
                         id="confirm-password"
-                        name="confirm-password" />
+                        name="confirm-password" 
+                        required />
+                    <span class="error-msg" aria-live="polite"></span>
                 </span>                
             </p>
         
             <button type="submit">Create Account</button>
-
             <p>Aready have an account? <a href="#">log in</a></p>
         </form>
     </div>
